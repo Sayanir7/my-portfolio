@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <title>Portfolio_education</title>
+    <style>
+        .aboutme{
+            padding-top: 40px;
+        }
+        .speciallist{
+            margin-top: 0px;
+
+
+        }
+        .description{
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: justify;
+            border: solid ;
+            padding: 10px;
+            height: 350px;
+            
+        }
+        .description ul{
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: solid 1px ;
+            padding-bottom: 5px;
+            box-shadow: 0px 10px 5px lightblue;
+        }
+
+        .year{
+            margin-left: 5px;
+            margin-top: 45px;
+            margin-right: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(122, 112, 231);
+        }
+        .iitg{
+            height: 100px;
+            width: 330px;
+            border-radius: 50%;
+            margin: 10px;
+            background-size: cover;
+            background-image: url('./pic/iitg.png');
+        }
+        .zillogo{
+            
+            height: 100px;
+            width: 330px;
+            border-radius: 50%;
+            margin: 10px;
+            background-size: cover;
+            background-image: url('./pic/zilla.gif');
+            
+        }
+        .vhs{
+            
+            height: 100px;
+            width: 330px;
+            border-radius: 50%;
+            margin: 10px;
+            background-size: cover;
+            background-image: url('./pic/vhs.jfif');
+            
+        }
+        .school{
+            margin-left: 20px;
+        }
+        .school h3{
+            margin: 0px;
+            color: rgb(2, 2, 79);
+            font-size: 30px;
+        }
+        .school h4{
+            font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .speciallist{
+            font-size: 30px;
+            color: rgb(136, 136, 214);
+            
+        }
+        .aboutme h2{
+            margin-top: 20px;
+            
+        }
+
+
+        .description::-webkit-scrollbar {
+            width:10px; /* Width of the scrollbar */
+            height: 10px;
+        }
+
+        .description::-webkit-scrollbar-track {
+            background: #cfecfd; /* Background of the scrollbar track */
+            border-radius: 0px; /* Round corners */
+        }
+
+        .description::-webkit-scrollbar-thumb {
+            background: #6d8bd8 ; /* Color of the scrollbar thumb */
+           
+            
+            border: 2px solid #f1f1f1; /* Padding around thumb */
+        }
+
+        .description::-webkit-scrollbar-thumb:hover {
+            cursor: pointer;
+            background:#1900a9; /* Color of the scrollbar thumb on hover */
+        }
+
+        /* Optional: Style for scrollbar buttons (up and down) */
+        .description::-webkit-scrollbar-button {
+            
+            display: none;
+        }
+
+
+
+        /* media */
+
+        @media (max-width: 1309px) {
+            body{
+                font-size: 14px;
+            }
+            .menu-btn {
+                display: flex;
+            }
+            .mid {
+                position: static;
+                left: 0;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            .mid ul {
+                flex-direction: column;
+            }
+            .mid ul li {
+                padding: 10px;
+            }
+            .mid ul li a {
+                padding: 10px;
+                font-size: 18px;
+            }
+            .left h2 {
+                font-size: 40px;
+            }
+            .right button {
+                height: 60px;
+                width: 60px;
+                font-size: 18px;
+            }
+            .about {
+                flex-direction: column;
+                margin: 20px;
+                
+            
+            }
+            .pic {
+                height: 500px;
+                width: 100%;
+            }
+            .aboutme {
+                padding: 40px;
+                height: fit-content;
+            }
+            .speciallist {
+                font-size: 30px;
+            }
+            .name {
+                font-size: 60px;
+            }
+            .aboutme h2 {
+                margin-top: 60px;
+                font-size: 24px;
+            }
+            .about{
+                height: fit-content;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body{
+                font-size: 14px;
+            }
+            header {
+                flex-direction: column;
+            }
+            .left {
+                margin: 0;
+            }
+            
+            .about {
+                margin: 10px;
+                height: fit-content;
+            }
+            .pic {
+
+                height: 0px;
+            }
+            .aboutme {
+                padding: 20px;
+                
+            }
+            .speciallist {
+                font-size: 24px;
+            }
+            .name {
+                font-size: 40px;
+            }
+            .aboutme h2 {
+                margin-top: 40px;
+                font-size: 20px;
+            }
+
+            .description{
+                height: fit-content;
+                overflow-y: hidden;
+
+            }
+            body{
+                font-size: 14px;
+            }
+            .description ul{
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+            }
+            .year{
+                text-align: center;
+            }
+            .iitg , .zillogo, .vhs{
+                width: 100px;
+            }
+
+
+        }
+        
+
+    </style>
+   
+</head>
+<body>
+
+    <header id="main-header3">
+        <div class="left">
+            <h2>Smith</h2>
+            <h2>.CV</h2>
+        </div>
+        <div class="menu-btn" style="font-size: 45px;" >
+            <i class="fa fa-bars" id="menu-btn" ></i>
+            
+            
+        </div>
+        <div class="mid" id="navbar">
+            <ul class="midul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li ><a href="skill.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                 
+                <li  ><a href="education.html" style=" color:rgb(69, 118, 223) ;">Education</a></li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+               
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+           
+        </div>
+        
+
+    </header>
+    <div id="dropdownMenu" class="dropdown-content">
+        <ul class="midul" style="list-style: none; text-align: center;align-items: center;">
+            <li id="cross-icon" style="padding: 2rem;" ><i class="fa-solid fa-xmark" style="font-size: 1.4rem;"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li ><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+                
+            <li  ><a href="education.html" style=" color:rgb(69, 118, 223) ;">Education</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <main>  
+        <div class="propic">
+            <img src="https://images.playground.com/d4f96683e67442f686289dbc0f50955a.jpeg" alt="" >
+        </div>
+        <div class="about">
+            <div class="perinfo">
+                <div class="pic"> </div>
+                <div class="geninfo">
+                    <h1>Genral Information</h1>
+                </div>
+            </div>
+            <div class="aboutme">
+                <div class="speciallist">
+                    What I am good at
+                </div>
+                <div class="name">
+                    My Education
+                </div>
+                <!-- <h2>Institutions</h2> -->
+                <div class="description">
+                    <ul>
+                        <div class="year">2023</div>
+                        <div class="iitg"></div>
+                        <div class="school">
+                            <h3>Indian Institute of Technology, Guwahati</h3>
+                            <h4>Btech, ECE</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio, harum aut dolore perferendis eligendi tempore nostrum laudantium perspiciatis corrupti nesciunt ipsam facere? Quidem quasi provident consectetur dolorem nostrum placeat?</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="year">2021</div>
+                        <div class="zillogo"></div>
+                        <div class="school">
+                            <h3>Jalpaiguri Zilla school</h3>
+                            <h4>12th Board</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio, harum aut dolore perferendis eligendi tempore nostrum laudantium perspiciatis corrupti nesciunt ipsam facere? Quidem quasi provident consectetur dolorem nostrum placeat?</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="year">2015</div>
+                        <div class="vhs"></div>
+                        <div class="school">
+                            <h3>Vivekananda High School </h3>
+                            <h4>Matrix(10th board)</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio, harum aut dolore perferendis eligendi tempore nostrum laudantium perspiciatis corrupti nesciunt ipsam facere? Quidem quasi provident consectetur dolorem nostrum placeat?</p>
+                        </div>
+                    </ul>
+                    
+                </div>
+                 
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, itaque exercitationem perferendis quidem fugit deserunt mollitia tempora ut dolorem quis aspernatur explicabo debitis nulla sequi necessitatibus neque tempore aperiam quam!</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" style="font-size: 35px;"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com" style="font-size: 35px;" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com" style="font-size: 35px;"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Me</h3>
+                <p>123 Street Name, City, State, 12345</p>
+                <p>Email: j.smith@yahoo.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024 SmithCV. All rights reserved.</p>
+        </div>
+    </footer>
+   
+    <script>
+        document.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header3');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) { // Change '50' to the desired scroll position
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    
+    <script src="script.js"></script>
+   
+</body>
+</html>

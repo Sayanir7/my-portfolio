@@ -1,0 +1,451 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    /* font-family: "Audiowide", sans-serif; */
+    font-size: 16px;
+    
+}
+ 
+
+body{
+    background-image: url('https://img.freepik.com/free-vector/abstract-classic-blue-wallpaper_23-2148421852.jpg?size=626&ext=jpg&ga=GA1.1.1616710180.1718807866&semt=ais_user');
+    background-size: cover;
+}
+
+main{
+    width: 100%;
+
+}
+
+header {
+    display:flex;
+    align-items: center;
+    /* margin-top: 20px; */
+    /* position: fixed; */
+    padding-top: 20px;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.5s ease-in ;
+    /* background-color: white; */
+
+    
+}
+header.scrolled {
+    background-color: #0c0594;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    padding: 0px;
+    box-shadow:0px 5px 5px rgb(27, 16, 182);
+}
+
+.left {
+    display: flex;
+    margin-left: 40px;
+    
+}
+.left h2 {
+    color: rgb(0, 238, 255);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+
+.mid {
+    /* background-color: rgb(2, 2, 79); */
+    position: absolute;
+    right: 40px;
+    
+
+}
+.mid ul {
+    display: flex;
+}
+.mid ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    /* border: solid 1px rgb(160, 156, 156); */
+    text-align: center;
+    list-style-type: none
+}
+.mid ul li a:hover {
+   
+    color:rgb(69, 118, 223) ;
+    
+}
+.mid ul li a {
+    text-decoration: none;
+    color: rgb(202, 202, 240);
+    transition: color 0.2s ease-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+ 
+
+.propic{
+    position:absolute;
+    top: 104px;
+    left: 18px;
+    z-index: 1;
+}
+.propic img{
+    height: 560px;
+    width: 458px;
+}
+
+
+.about {
+    position: relative;
+    background-image: url('https://img.freepik.com/free-vector/blue-curve-frame-template-vector_53876-111537.jpg?size=626&ext=jpg&ga=GA1.1.1616710180.1718807866&semt=ais_user');
+
+    background-size: cover;
+    top: 0px;
+    margin: 40px;
+    /* width: 100%; */
+    display: flex;
+    height: 652px;
+    /* padding-right: 81px; */
+    
+}
+.perinfo {
+    color: black;
+    /* background-color: rgb(2, 2, 79); */
+}
+.pic {
+    background-image: url('https://i.pinimg.com/736x/90/38/6c/90386cf7a87194974964887f3e8090df.jpg');
+    background-size: cover;
+    height: 560px;
+    width: 460px;
+    font-size: 80px;
+    
+    
+    /* border-radius: 50%; */
+    /* margin-top: 20px; */
+}
+.pic h1{
+    position: relative;
+    top: 203px;
+    left: 30px;
+    color: rgb(230, 225, 225);
+    text-shadow: 5px 5px 4px #000000;
+
+    font-size: 92px;
+    display: none;
+}
+.geninfo {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: rgb(7, 37, 102);
+}
+
+.aboutme {
+    /* background-color: rgb(223, 223, 245); */
+    padding: 80px;
+    
+    /* width:949px; */
+    background-size: cover;
+}
+.speciallist {
+    font-size: 40px;
+    color: rgb(110, 137, 161);
+    margin-top: 20px;
+}
+.name {
+    font-size: 100px;
+    color: rgb(2, 2, 79);
+    font-weight: bolder;
+}
+
+.aboutme h2 {
+    color: rgb(2, 2, 79);
+    margin-top: 120px;
+    font-size: 30px;
+}
+.description {
+    margin-top: 30px;
+    color: rgb(27, 81, 128);
+}
+
+/* Footer */
+
+footer {
+    font-size: 1.6rem;
+    background-image: url(./pic/background.avif);
+    color: #fff;
+    background-size: cover;
+    padding-bottom: 0;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #07035d;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a i {
+    /* width: 38px;
+    height: 8px; */
+    font-size: 30px;
+    color: #ccc;
+    /* background-color: #fff; */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    /* margin-top: 20px; */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+::selection {
+    background-color: #0a0884;
+    color: #fff;
+}
+
+.dropdown-content{
+    display: none;
+}
+.menu-btn{
+    font-size: 45px;
+}
+/* media queries */
+
+@media (max-width: 1309px) {
+    body{
+        font-size: 14px;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .mid {
+        position: static;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .mid ul {
+        flex-direction: column;
+    }
+    .mid ul li {
+        padding: 10px;
+    }
+    .mid ul li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .left h2 {
+        font-size: 40px;
+    }
+    .right button {
+        height: 60px;
+        width: 60px;
+        font-size: 18px;
+    }
+    .about {
+        flex-direction: column;
+        margin: 20px;
+        
+    
+    }
+    .pic {
+        height: 567px;
+        width: 100%;
+    }
+    .pic h1{
+        display: block;
+    }
+    .aboutme {
+        padding: 40px;
+        height: fit-content;
+    }
+    .speciallist {
+        font-size: 30px;
+    }
+    .name {
+        font-size: 60px;
+    }
+    .aboutme h2 {
+        margin-top: 60px;
+        font-size: 24px;
+    }
+    .about{
+        height: fit-content;
+    }
+    .propic{
+        display: none;
+    }
+
+
+    /* dropdown */
+
+
+    .dropdown-content{
+        display: none;
+    }
+
+    /* Basic styling for the button */
+    #menu-btn {
+        position: relative;
+        top: 7px;
+        right: -15px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-content {
+        display: block;
+        position: fixed;
+        top: 0px;
+         /* Adjust based on button position */
+        right: -250px; /* Start off-screen to the right */
+        background-color: #cccbce;
+        width: 200px;
+        height: 100rem;
+    
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 20;
+        border-left: 1px solid #ccc;
+        transition: right 0.3s ease; /* Transition for sliding effect */
+    }
+    .dropdown-content ul li{
+        border-bottom: solid 1px rgb(29, 35, 117);
+        box-shadow: 0px 1px 10px rgb(149, 154, 235);
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Active state for the dropdown menu */
+    .dropdown-content.show {
+        right: 0; /* Move into view */
+    }
+
+}
+
+@media (max-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+    header {
+        flex-direction: column;
+    }
+    .left {
+        margin: 0;
+    }
+    
+    .about {
+        margin: 10px;
+        height: fit-content;
+    }
+    .pic {
+
+        height: 0px;
+    }
+    .aboutme {
+        padding: 20px;
+        
+    }
+    .speciallist {
+        font-size: 24px;
+    }
+    .name {
+        font-size: 40px;
+    }
+    .aboutme h2 {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .propic{
+        display: none;
+    }
+}
+
+
+/* for menu button */
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+    position: fixed;
+    right: 20px;
+}
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(2, 2, 79);
+    margin: 6px 0;
+}
